@@ -15,6 +15,9 @@
 		A717DA7123ABDE3300F07DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A717DA6F23ABDE3300F07DDD /* LaunchScreen.storyboard */; };
 		A717DA7C23ABDE3300F07DDD /* iOSTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717DA7B23ABDE3300F07DDD /* iOSTemplateTests.swift */; };
 		A717DA8723ABDE3300F07DDD /* iOSTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717DA8623ABDE3300F07DDD /* iOSTemplateUITests.swift */; };
+		A717DA9523ABDE5200F07DDD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717DA9423ABDE5200F07DDD /* ApiService.swift */; };
+		A717DA9723ABDE5F00F07DDD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717DA9623ABDE5F00F07DDD /* Model.swift */; };
+		A717DA9923ABDE7100F07DDD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717DA9823ABDE7100F07DDD /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A717DA8223ABDE3300F07DDD /* iOSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A717DA8623ABDE3300F07DDD /* iOSTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTemplateUITests.swift; sourceTree = "<group>"; };
 		A717DA8823ABDE3300F07DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A717DA9423ABDE5200F07DDD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A717DA9623ABDE5F00F07DDD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A717DA9823ABDE7100F07DDD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				A717DA6323ABDE3100F07DDD /* AppDelegate.swift */,
-				A717DA6523ABDE3100F07DDD /* ViewController.swift */,
+				A717DA9B23ABDED300F07DDD /* Controllers */,
+				A717DA9C23ABDEE800F07DDD /* Network Calls */,
+				A717DA9D23ABDF0700F07DDD /* Model */,
+				A717DA9E23ABDF1100F07DDD /* ViewModel */,
 				A717DA6723ABDE3100F07DDD /* Main.storyboard */,
 				A717DA6D23ABDE3300F07DDD /* Assets.xcassets */,
 				A717DA6F23ABDE3300F07DDD /* LaunchScreen.storyboard */,
@@ -126,6 +135,38 @@
 				A717DA8823ABDE3300F07DDD /* Info.plist */,
 			);
 			path = iOSTemplateUITests;
+			sourceTree = "<group>";
+		};
+		A717DA9B23ABDED300F07DDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A717DA6523ABDE3100F07DDD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A717DA9C23ABDEE800F07DDD /* Network Calls */ = {
+			isa = PBXGroup;
+			children = (
+				A717DA9423ABDE5200F07DDD /* ApiService.swift */,
+			);
+			path = "Network Calls";
+			sourceTree = "<group>";
+		};
+		A717DA9D23ABDF0700F07DDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A717DA9623ABDE5F00F07DDD /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A717DA9E23ABDF1100F07DDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A717DA9823ABDE7100F07DDD /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A717DA9723ABDE5F00F07DDD /* Model.swift in Sources */,
 				A717DA6623ABDE3100F07DDD /* ViewController.swift in Sources */,
 				A717DA6C23ABDE3100F07DDD /* iOSTemplate.xcdatamodeld in Sources */,
+				A717DA9523ABDE5200F07DDD /* ApiService.swift in Sources */,
+				A717DA9923ABDE7100F07DDD /* ViewModel.swift in Sources */,
 				A717DA6423ABDE3100F07DDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
